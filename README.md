@@ -1,3 +1,5 @@
 # osdev-jp.github.io
-- [トップページへ](http://osdev.jp/index.html)
+- [フォーク元のトップページへ](http://osdev.jp/index.html)
+- [このリポジトリのトップページへ](./index.html)
 - [献上方法](./CONTRIBUTE.md)
+- [ガイドライン](./GUIDELINES.md)
