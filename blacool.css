@@ -1,0 +1,145 @@
+/**
+ * Blacool Style
+ * Copyright (C) Takym.
+ *
+ * @author Takym
+ * @version 0.0.0.0
+ */
+
+/* 全てのタグ */
+* {
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	background-color: #FFFFFF;
+	font-family: sans-serif;
+}
+
+/* ページ全体 */
+body {
+	width: 100%;
+	height: 100%;
+}
+
+/* コンテナ */
+div#container {
+	min-height: 100%;
+	position: relative;
+}
+
+/* マージン・パディング */
+section.main > h1, article {
+	margin: 5px;
+	padding: 5px;
+}
+
+/* ヘッダー */
+header {
+	width: 100%;
+	height: 96px;
+	top: 0;
+	position: fixed;
+}
+
+/* ヘッダー - 色とフォント */
+header, header * {
+	background-color: #404040;
+	color: #C08000;
+	font-size: 110%;
+}
+
+/* ウェブサイトの題名 */
+header > h1#top {
+	font-weight: bolder;
+	color: #0080C0;
+	font-size: 200%;
+}
+
+/* フッター */
+footer {
+	width: 100%;
+	height: 48px;
+	bottom: 0;
+	position: fixed;
+}
+
+/* フッター - 色とフォント */
+footer, footer * {
+	color: #C080C0;
+	background-color: #404040;
+	font-size: 90%;
+	text-align: center;
+}
+
+/* メインコンテンツ */
+div#main {
+	margin: 105px 0;
+	display: block;
+	overflow: auto;
+}
+
+/* 本文 */
+section.main {
+	margin-right: 10px;
+	float: right;
+	width: 76%;
+}
+
+/* ページの題名 */
+section.main > h1 {
+	color: #10AAAA;
+	border-bottom-style: dashed;
+	border-bottom-width: 1px;
+	border-bottom-color: #EF5555;
+}
+
+/* サイドバー */
+nav {
+	margin: 26px 8px;
+	padding: 5px;
+	width: 21%;
+}
+
+/* 記事 */
+article {
+	display: block;
+	overflow: auto;
+	border-top-style: dotted;
+	border-top-width: 1px;
+	border-top-color: #CACACA;
+}
+
+/* 記事の下に改行を自動挿入 */
+article::after {
+	content: "\A";
+	white-space: pre;
+}
+
+/* サイドバー内の記事 */
+nav > article {
+	margin: -1px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #0080FF;
+}
+
+/* サイドバー内の記事 - 色とフォント */
+nav > article, nav > article * {
+	background-color: #E0E0E0;
+	color: #242424;
+}
+
+/* 記事の見出し */
+article > h2 {
+	border-left-style: solid;
+	border-left-width: 5px;
+	border-left-color: #0060CC;
+	border-bottom-style: dashed;
+	border-bottom-width: 3px;
+	border-bottom-color: #CC6000;
+}
+
+/* リストの点の位置 */
+li {
+	list-style-position: inside;
+}
