@@ -1,10 +1,31 @@
 <?php
+	/**
+	 * Blacool Style TEMPLATE.PHP
+	 * Copyright (C) 2018 Takym.
+	 * 
+	 * このテンプレートを利用してページを生成するには、
+	 * http://www.php.net/ からPHPをダウンロードして以下のコマンドを実行してください。
+	 * > php -c php.ini template.php > template.html
+	 * 動作確認バージョン：v7.2.11
+	 * 
+	 * @author Takym
+	 * @version 0.0.0.0
+	 */
+
+	// ウェブアプリ名
 	$name = "osdev.jp";
+	// 著作者または製作者
 	$author = "osdev.jp members";
+	// ウェブサイトの題名
 	$title_website = "osdev.jp - 日本のOS開発コミュニティ";
+	// ページの題名
 	$title_page = "テンプレートページ";
+	// ページの説明
 	$description = "osdev.jpはOS開発に有用な情報を収集し公開しています。";
+	// ページのキーワード (カンマ区切り)
 	$keywords = "";
+	// blacool.css が格納されているディレクトリ (最後のスラッシュは不要)
+	$styledir = ".";
 ?>
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
@@ -17,7 +38,7 @@
 		<meta name="description" content="<?php echo $description ?>" />
 		<meta name="generator" content="Blacool Style TEMPLATE.PHP">
 		<meta name="keywords" content="<?php echo $keywords ?>" />
-		<link rel="stylesheet" href="./blacool.css" type="text/css" />
+		<link rel="stylesheet" href="<?php echo $styledir ?>/blacool.css" type="text/css" />
 	</head>
 	<body>
 		<div id="container">
@@ -52,6 +73,7 @@
 							内容をここに挿入。内容をここに挿入。内容をここに挿入。
 						</p>
 					</article>
+					<br />
 					<!-- 記事 (例) -->
 					<article id="contents">
 						<h2>見出し</h2>
@@ -70,6 +92,7 @@
 							内容をここに挿入。内容をここに挿入。内容をここに挿入。
 						</p>
 					</article>
+					<br />
 					<!-- 記事 (例) -->
 					<article id="contents">
 						<h2>見出し</h2>
@@ -88,6 +111,7 @@
 							内容をここに挿入。内容をここに挿入。内容をここに挿入。
 						</p>
 					</article>
+					<br />
 				</section>
 				<!-- 本文終了 -->
 
@@ -111,6 +135,7 @@
 							内容をここに挿入。内容をここに挿入。内容をここに挿入。
 						</p>
 					</article>
+					<br />
 					<!-- 記事 (例) -->
 					<article id="contents">
 						<h2>見出し</h2>
@@ -129,6 +154,7 @@
 							内容をここに挿入。内容をここに挿入。内容をここに挿入。
 						</p>
 					</article>
+					<br />
 					<!-- 記事 (例) -->
 					<article id="contents">
 						<h2>見出し</h2>
@@ -147,6 +173,7 @@
 							内容をここに挿入。内容をここに挿入。内容をここに挿入。
 						</p>
 					</article>
+					<br />
 				</nav>
 				<!-- サイドバー終了 -->
 
