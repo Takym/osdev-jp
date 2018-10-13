@@ -75,9 +75,15 @@ footer, footer * {
 
 /* メインコンテンツ */
 div#main {
-	margin: 105px 0;
+	padding: 105px 0;
 	display: block;
 	overflow: auto;
+}
+
+/* ページ内リンク */
+section.main *[id] {
+	margin-top: -105px;
+	padding-top: 105px;
 }
 
 /* 本文 */
@@ -91,7 +97,7 @@ section.main {
 section.main > h1 {
 	color: #10AAAA;
 	border-bottom-style: dashed;
-	border-bottom-width: 1px;
+	border-bottom-width: 2px;
 	border-bottom-color: #EF5555;
 }
 
@@ -108,9 +114,10 @@ article {
 	padding-top: 0;
 	display: block;
 	overflow: auto;
-	border-top-style: dotted;
-	border-top-width: 1px;
-	border-top-color: #CACACA;
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: #CACACA;
 }
 
 /* サイドバー内の記事 */
@@ -140,4 +147,43 @@ article > h2 {
 /* リストの点の位置 */
 li {
 	list-style-position: inside;
+}
+
+/* リンク */
+a, a:link {
+	color: #11AA11;
+	font-size: 100%;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #006000;
+	font-size: 100%;
+	text-decoration: underline;
+}
+
+header > h1#top a, header > h1#top a:link, header > h1#top a:visited {
+	padding: 0;
+	font-weight: bolder;
+	color: #0080C0;
+}
+
+a:hover {
+	background-color: #CCCCCC;
+}
+
+header > h1#top a:hover {
+	background-color: #666666;
+}
+
+a:active, header > h1#top a:active {
+	color: #FF7F3F;
+	background-color: #BFBFBF;
+	text-decoration: overline;
+}
+
+/* 単語強調 */
+span {
+	color: #800000;
+	background-color: rgba(24, 24, 24, 0.25);
 }
