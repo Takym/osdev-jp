@@ -3,7 +3,7 @@
  * Copyright (C) Takym.
  *
  * @author Takym
- * @version 0.0.0.0
+ * @version 0.0.0.1
  */
 
 /* 全てのタグ */
@@ -87,10 +87,17 @@ section.main *[id] {
 }
 
 /* 本文 */
-section.main {
+section.main, section.main[nav=show] {
 	margin-right: 10px;
 	float: right;
 	width: 76%;
+}
+
+/* 本文 (サイドバー無し) */
+section.main[nav=hide] {
+	margin-left: 24px;
+	float: none;
+	width: 95%;
 }
 
 /* ページの題名 */

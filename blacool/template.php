@@ -9,7 +9,7 @@
 	 * 動作確認バージョン：v7.2.11
 	 * 
 	 * @author Takym
-	 * @version 0.0.0.0
+	 * @version 0.0.0.1
 	 */
 
 	// ウェブアプリ名
@@ -26,6 +26,8 @@
 	$keywords = "";
 	// blacool.css が格納されているディレクトリ (最後のスラッシュは不要)
 	$styledir = ".";
+	// サイドバーを表示するかどうか "show" なら表示 "hide" なら非表示です。
+	$sidebar = "show";
 ?>
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE html>
@@ -37,7 +39,7 @@
 		<meta name="author" content="<?php echo $author ?>">
 		<meta name="description" content="<?php echo $description ?>" />
 		<meta name="generator" content="Blacool Style TEMPLATE.PHP">
-		<meta name="keywords" content="<?php echo $keywords ?>" />
+		<meta name="keywords" content="<?php echo "osdev-jp,OS開発,プログラミングコミュニティ,低レイヤ,".$title_page.",".$keywords ?>" />
 		<link rel="stylesheet" href="<?php echo $styledir ?>/blacool.css" type="text/css" />
 	</head>
 	<body>
@@ -53,7 +55,7 @@
 			<div id="main">
 
 				<!-- 本文開始 -->
-				<section class="main">
+				<section class="main" nav="<?php echo $sidebar ?>">
 					<h1><?php echo $title_page ?></h1>
 					<!-- 記事 (例) -->
 					<article id="contents">
@@ -115,6 +117,7 @@
 				</section>
 				<!-- 本文終了 -->
 
+				<?php if ($sidebar == "show") { ?>
 				<!-- サイドバー開始 -->
 				<nav>
 					<!-- 記事 (例) -->
@@ -176,6 +179,7 @@
 					<br />
 				</nav>
 				<!-- サイドバー終了 -->
+				<?php } ?>
 
 			</div>
 			<!-- メインコンテンツ 終了 -->
