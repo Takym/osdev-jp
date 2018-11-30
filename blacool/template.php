@@ -17,7 +17,7 @@
 	// 著作者または製作者
 	$author = "osdev.jp members";
 	// ウェブサイトの題名
-	$title_website = "osdev.jp - 日本のOS開発コミュニティ";
+	$title_website = "<a href=\"./index.html\">osdev.jp</a> - 日本のOS開発コミュニティ";
 	// ページの題名
 	$title_page = "テンプレートページ";
 	// ページの説明
