@@ -2,12 +2,12 @@
 	/**
 	 * Blacool Style TEMPLATE.PHP
 	 * Copyright (C) 2018 Takym.
-	 * 
+	 *
 	 * このテンプレートを利用してページを生成するには、
 	 * http://www.php.net/ からPHPをダウンロードして以下のコマンドを実行してください。
 	 * > php -c php.ini template.php > template.html
 	 * 動作確認バージョン：v7.2.11
-	 * 
+	 *
 	 * @author Takym
 	 * @version 0.0.0.1
 	 */
