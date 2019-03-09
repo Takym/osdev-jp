@@ -1,7 +1,11 @@
 <?php
 	/**
 	 * Blacool Style TEMPLATE.PHP
-	 * Copyright (C) 2018 Takym.
+	 * Copyright (C) 2019 Takym.
+	 *
+	 * Blacoolはosdev.jp向けに作成しました。
+	 * このPHPファイルはHTMLファイルを生成する為のテンプレートです。
+	 * 生成されたHTMLファイルは静的ページとして動作します。
 	 *
 	 * このテンプレートを利用してページを生成するには、
 	 * http://www.php.net/ からPHPをダウンロードして以下のコマンドを実行してください。
@@ -9,7 +13,7 @@
 	 * 動作確認バージョン：v7.2.11
 	 *
 	 * @author Takym
-	 * @version 0.0.0.1
+	 * @version 0.0.0.2
 	 */
 
 	// ウェブアプリ名
