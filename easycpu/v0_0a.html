@@ -1,0 +1,220 @@
+﻿<!-- Easy CPU -->
+<!-- Copyright (C) 2019 Takym. -->
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<!-- メタ情報 -->
+		<meta charset="UTF-8" />
+		<title>Easy CPU</title>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="content-language" content="ja-JP" />
+		<meta http-equiv="default-style" content="Default" />
+		<meta name="application-name" content="Easy CPU" />
+		<meta name="author" content="Takym" />
+		<meta name="description" content="簡易的な独自の命令セットのCPUエミュレータです。" />
+		<meta name="generator" content="Microsoft Visual Studio Code" />
+		<meta name="keywords" content="EasyCPU,Easy,CPU,Emulater,Program,Binary,RISC,エミュレータ" />
+
+		<!-- プログラム本体 -->
+		<script type="text/javascript" language="JavaScript">
+			// グローバル変数宣言
+			var screen;
+			var input_history;
+			var register;
+			var memory;
+			var cmd_inst;
+			var cmd_arg0;
+			var cmd_arg1;
+			var cmd_arg2;
+			var cmd_arg3;
+
+			// グローバル変数初期化
+			window.onload = function init() {
+				screen        = document.getElementById("screen");
+				input_history = document.getElementById("input_history");
+				register      = document.getElementById("register");
+				memory        = document.getElementById("memory");
+
+				screen       .innerHTML = "";
+				input_history.innerHTML = "";
+				register     .innerHTML = "";
+				memory       .innerHTML = "";
+
+				return;
+			}
+
+			function cmd_run() {
+				cmd_inst = document.cmd.inst.value;
+				cmd_arg0 = document.cmd.arg0.value;
+				cmd_arg1 = document.cmd.arg1.value;
+				cmd_arg2 = document.cmd.arg2.value;
+				cmd_arg3 = document.cmd.arg3.value;
+
+				var cmd_text = "<p>"
+					+ cmd_inst + " "
+					+ cmd_arg0 + " "
+					+ cmd_arg1 + " "
+					+ cmd_arg2 + " "
+					+ cmd_arg3 + ";</p>";
+				input_history.innerHTML += cmd_text;
+
+				eval("inst_" + cmd_inst + "();");
+
+				return;
+			}
+
+			// NOP命令
+			function inst_NOP() { return; }
+
+			// HELP命令
+			function inst_HELP() {
+				var output = "<span><pre>";
+				output += "NOP   : 何もしません。<br />";
+				output += "HELP  : このヘルプを表示します。<br />";
+				output += "CLS   : コンソール画面を初期化します。<br />";
+				output += "</pre></span>";
+				screen.innerHTML += output;
+				return;
+			}
+
+			// CLS命令
+			function inst_CLS() {
+				if (cmd_arg0 == "1") {
+					input_history.innerHTML = "";
+				} else if (cmd_arg0 == "2") {
+					screen.innerHTML = "";
+					input_history.innerHTML = "";
+				} else {
+					screen.innerHTML = "";
+				}
+				return;
+			}
+
+			// MOV命令()
+			function inst_MOV() {
+				if (cmd_arg0 == "R0") {
+					register.innerHTML = "R0: " + cmd_arg1;
+				}
+				return;
+			}
+		</script>
+
+		<!-- UI Design -->
+		<style type="text/css" title="Default">
+			*, body {
+				margin: 0;
+				padding: 0;
+				font-family: 'IPAゴシック', 'Consolas', 'MS Gothic', sans-serif;
+			}
+
+			div {
+				display: block;
+			}
+
+			.clbx {
+				clear: both;
+			}
+
+			.column {
+				width: 48vw;
+				float: left;
+			}
+
+
+			#screen {
+				height: 48vh;
+				border: 1px #000000 solid;
+				background-color: #000000;
+				color: #C0C0C0;
+				overflow: scroll;
+				white-space: nowrap;
+			}
+
+			#command {
+				height: 48vh;
+				border: 1px #000000 solid;
+				background-color: #BBE8E8;
+			}
+
+			#input_history {
+				height: 45vh;
+				overflow: auto;
+				white-space: nowrap;
+			}
+
+			#register {
+				height: 24vh;
+				border: 1px #000000 solid;
+				background-color: #E8E8BB;
+			}
+
+			#memory {
+				height: 72vh;
+				border: 1px #000000 solid;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- JavaScript 未サポートブラウザ -->
+		<noscript>
+			<h1 style="color: #FF0000">JavaScriptを有効化してください。</h1>
+		</noscript>
+		<!-- マージン -->
+		<div style="width: 2vw; height: 96vh; float: left;"></div>
+		<!-- 左側の列 -->
+		<div class="column" place="left">
+			<!-- コンソール画面 -->
+			<div id="screen">
+				screen
+			</div>
+			<!-- コマンド入力と履歴 -->
+			<div id="command">
+				<div id="input_history">
+					command.input_history
+				</div>
+				<form name="cmd" action="." OnSubmit="cmd_run(); return false;">
+					<span>&emsp;</span>
+					<select name="inst">
+						<option value="NOP">コマンドを選択</option>
+						<option value="HELP">ヘルプ</option>
+						<optgroup label="CPU操作">
+							<option value="NOP">NOP</option>
+							<option value="HELP">HELP</option>
+							<option value="CLS">CLS</option>
+						</optgroup>
+						<optgroup label="メモリ読み書き">
+							<option value="MOV">MOV</option>
+						</optgroup>
+					</select>
+					<label>
+						<span>arg0 :</span>
+						<input name="arg0" type="text" size="8" value="" />
+					</label>
+					<label>
+						<span>arg1 :</span>
+						<input name="arg1" type="text" size="8" value="" />
+					</label>
+					<label>
+						<span>arg2 :</span>
+						<input name="arg2" type="text" size="8" value="" />
+					</label>
+					<label>
+						<span>arg3 :</span>
+						<input name="arg3" type="text" size="8" value="" />
+					</label>
+					<input type="submit" value="実行" />
+				</form>
+			</div>
+		</div>
+		<!-- 右側の列 -->
+		<div class="column" place="right">
+			<div id="register">
+				register
+			</div>
+			<div id="memory">
+				memory
+			</div>
+		</div>
+	</body>
+</html>
