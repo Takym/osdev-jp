@@ -1,5 +1,6 @@
-# Takym/osdev-jp.github.io
-- [フォーク元のトップページへ](http://osdev.jp/index.html)
+# Takym/osdev-jp
+- このサイトは osdev-jp のサイトのリポジトリをフォークして作られたものです。
+- [本家サイトのトップページへ](http://osdev.jp/index.html)
 - [このリポジトリのトップページへ](./index.html)
 - [献上方法](./CONTRIBUTE.md)
 - [ガイドライン](./GUIDELINES.md)
