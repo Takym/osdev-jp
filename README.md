@@ -1,5 +1,15 @@
+# GitHub Actions が正しく動作せず。Dependabot 以外のプルリクをマージしてしまった。
+
+# Takym/osdev-jp
+- このサイトは osdev-jp のサイトのリポジトリをフォークして作られたものです。
+- [本家サイトのトップページへ](http://osdev.jp/index.html)
+- [このリポジトリのトップページへ](./index.html)
+- [献上方法](./CONTRIBUTE.md)
+- [ガイドライン](./GUIDELINES.md)
+
 ## 第36回自作OSもくもく会オンラインのご案内！
 11月26日（日）開催です。参加登録は[こちら](https://osdev-jp.connpass.com/event/301367/)から！
+
 
 ## リンク
 - [Wiki](https://github.com/osdev-jp/osdev-jp.github.io/wiki) OS開発に役立つ情報が集まっています。GitHubアカウントがあれば編集できます。
