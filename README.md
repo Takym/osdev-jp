@@ -17,10 +17,16 @@ OS自作をやっている人々で集まって，進捗を共有したり，み
 	- 自己紹介用チャンネル
 - [#random](https://osdev-jp.slack.com/messages/C0XA87EM7/)
 	- 重要な雑談、OS 関連の議論、広く周知したい事等のチャンネル
+	- （改名検討中）
 
 ### 一般チャンネル
 - [#雑談](https://osdev-jp.slack.com/archives/CTC0F40TV)
-	- 低レイヤに無関係でも歓迎する雑談チャンネル
+	- 低レイヤに無関係でも歓迎する気軽な雑談チャンネル
+	- 緩く交流しましょう。
+	- （改名検討中）
+- （チャンネル名未定）
+	- 自由テーマの雑談チャンネル
+	- 意見・考えの押し付けは行ってはいけません。
 - [#event](https://osdev-jp.slack.com/messages/C626TTWMP/)
 	- 各種イベントの告知用チャンネル
 	- 最近は「自作OSもくもく会」「もくもく作業会(仮称)」が行われています。
@@ -42,6 +48,8 @@ OS自作をやっている人々で集まって，進捗を共有したり，み
 ### 特別チャンネル
 - [#運営に相談](https://osdev-jp.slack.com/messages/C094HQGNTU2)
 	- 運営に対する目安箱チャンネル
+	- 運営に関して建設的な議論を行う事が目的です。
+	- 匿名で相談したい場合、若しくは運営にのみ相談したい場合は、[こちらのフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdkNQuiEYA8D9VWy12xTxCmgi3qktmhhbHk6kS6dRdweE4HLg/viewform)から投稿してください。
 - [#未読位置消え防止用待避所](https://osdev-jp.slack.com/messages/C07GFJP0SEQ/)
 	- 未読位置調整チャンネル
 	- PC版で最初に表示したチャンネルの未読位置がズレてしまう事があります。
