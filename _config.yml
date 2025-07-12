@@ -5,3 +5,4 @@ logo: logo.png
 markdown: GFM
 plugins:
   - jekyll-sitemap
+markdown: GFM
