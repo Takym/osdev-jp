@@ -1,8 +1,3 @@
-## 第45回自作OSもくもく会オンラインのご案内！
-OS自作をやっている人々で集まって，進捗を共有したり，みんなで黙々と作業する時間を取る会です！
-5月31日（土）開催です！
-参加登録は[こちら](https://osdev-jp.connpass.com/event/354860/)から！
-
 ## リンク
 - [Wiki](https://github.com/osdev-jp/osdev-jp.github.io/wiki) OS開発に役立つ情報が集まっています。GitHubアカウントがあれば編集できます。
 	- [ウェブページとして見る](https://osdev.jp/wiki/Home.html)
@@ -87,7 +82,7 @@ OS自作をやっている人々で集まって，進捗を共有したり，み
 
 ぜひご参加ください！
 
-<a href="https://twitter.com/intent/tweet?button_hashtag=osdev_moku2&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Tweet #osdev_moku2</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<a href="https://x.com/intent/post?text=&hashtags=osdev_moku2&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-show-count="false">Post #osdev_moku2</a><script async src="https://platform.x.com/widgets.js" charset="utf-8"></script>
 
 ## Slack、メーリングリストへの参加方法
 Slackやメーリングリスト（ML）ではOS開発の質問とか相談が日々やり取りされています。
