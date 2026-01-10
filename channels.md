@@ -85,7 +85,8 @@
 
 ## 運営系
 * **[`#運営の相談`](https://discord.com/channels/1393134038142812195/1393150449519034452)**
-	* osdev-jp のコミュニティに関わる話題を取り扱います。
+	* osdev-jp のコミュニティに関わる話題を建設的に議論するチャンネルです。
+	* 匿名で相談したい場合、若しくは運営にのみ相談したい場合は、[こちらのフォーム](https://docs.google.com/forms/d/e/1FAIpQLSdkNQuiEYA8D9VWy12xTxCmgi3qktmhhbHk6kS6dRdweE4HLg/viewform)からお問い合わせください。
 	* Slack 時代の `#運営に相談` に相当します。
 
 ## Slack 時代にはあったが、Discord に引き継がれなかったチャンネル
