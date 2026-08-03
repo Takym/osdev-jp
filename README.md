@@ -8,7 +8,7 @@
 ## リンク
 - [Wiki](https://github.com/osdev-jp/osdev-jp.github.io/wiki) OS開発に役立つ情報が集まっています。GitHubアカウントがあれば編集できます。
 	- [ウェブページとして見る](https://osdev.jp/wiki/Home.html)
-	- [![Update Wiki Submodule](https://github.com/osdev-jp/osdev-jp.github.io/actions/workflows/UpdateWikiSubmodule.yml/badge.svg)](https://github.com/osdev-jp/osdev-jp.github.io/actions/workflows/UpdateWikiSubmodule.yml) - <small>失敗している場合は [Issues](https://github.com/osdev-jp/osdev-jp.github.io/issues) か [Discord の #運営の相談](https://discord.com/channels/1393134038142812195/1393150449519034452) へお願いします。</small>
+	- [![Update Wiki Submodule](https://github.com/osdev-jp/osdev-jp.github.io/actions/workflows/UpdateWikiSubmodule.yml/badge.svg)](https://github.com/osdev-jp/osdev-jp.github.io/actions/workflows/UpdateWikiSubmodule.yml) - <small>失敗している時は [Issues](https://github.com/osdev-jp/osdev-jp.github.io/issues) か [Discord の #運営の相談](https://discord.com/channels/1393134038142812195/1393150449519034452) へ連絡お願いします。</small>
 - [GitHub](https://github.com/osdev-jp) サンプルコードなどが置いてあります。
 - [YouTube](https://www.youtube.com/channel/UCZi_C-xvC5qNcALfD_5JKIg) OS開発に関わる情報を動画で解説しています。
 
