@@ -1,6 +1,8 @@
 # チャンネル案内
 
-<big>何れのチャンネルでも [osdev-jp Code of Conduct](./code-of-conduct.md)、[Discordコミュニティガイドライン](https://discord.com/guidelines)、法令などは最低限遵守してください。</big>
+<big>何れのチャンネルでも [osdev-jp Code of Conduct](./code-of-conduct.md)、[Discordコミュニティガイドライン](https://discord.com/guidelines)、法令などを遵守する必要があります。</big>
+
+各チャンネルのローカルルールは、この一覧の他、チャンネルのトピックを参照してください。
 
 ※目的のチャンネルが表示されない場合は、[チャンネルの表示設定](#表示されるチャンネルの制御方法)を確認してみてください。
 
