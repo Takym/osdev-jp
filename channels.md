@@ -102,7 +102,7 @@
 	* osdev-jp の参加者で分担してゲーム機・ゲームソフトを開発するプロジェクトです。
 * **[`#buntanpc開発`](https://discord.com/channels/1393134038142812195/1496261574241947668)**
 	* BuntanPC の開発について話し合われるチャンネルです。CPU と OS とプログラミング言語を自作するプロジェクトです。
-	* BuntanPC に関する詳しい説明は、GitHub リポジトリ「<https://github.com/buntan-pc/buntan-pc>」をご覧ください。
+	* BuntanPC に関する詳しい説明は、GitHub リポジトリ「[buntan-pc/buntan-pc](https://github.com/buntan-pc/buntan-pc)」をご覧ください。
 
 ## 個人チャンネル
 * 参加者は誰でも個人チャンネルを持つ事ができます。
