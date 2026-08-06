@@ -32,8 +32,8 @@ jobs:
           cd ..
       - name: "Configure git user information."
         run: |
-          git config --local user.email "noreply@localhost"
-          git config --local user.name "[BOT] Wiki Submodule Updater"
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
       - name: "Commit & Push"
         run: |
           git add wiki
